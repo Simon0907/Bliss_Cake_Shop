@@ -1,0 +1,86 @@
+.admin-layout{
+display:flex;
+min-height:100vh;
+font-family:Poppins;
+}
+
+/* SIDEBAR */
+
+.sidebar{
+width:250px;
+background:#db2777;
+color:white;
+padding:30px 20px;
+}
+
+.logo{
+margin-bottom:40px;
+font-size:24px;
+}
+
+.sidebar ul{
+list-style:none;
+padding:0;
+}
+
+.sidebar li{
+padding:12px;
+margin-bottom:10px;
+cursor:pointer;
+border-radius:8px;
+}
+
+.sidebar li:hover{
+background:#be185d;
+}
+
+/* MAIN */
+
+.main{
+flex:1;
+padding:40px;
+background:#f5f7fa;
+}
+
+/* STATS */
+
+.stats{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:25px;
+margin-top:30px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:12px;
+box-shadow:0 6px 20px rgba(0,0,0,0.08);
+text-align:center;
+}
+
+.card h3{
+color:#555;
+margin-bottom:10px;
+}
+
+.card p{
+font-size:24px;
+font-weight:600;
+color:#db2777;
+}
+.logout-btn{
+margin-top:30px;
+padding:10px 20px;
+background:#be185d;
+color:white;
+border:none;
+border-radius:8px;
+cursor:pointer;
+width:100%;
+font-weight:600;
+}
+
+.logout-btn:hover{
+background:#9f1239;
+}

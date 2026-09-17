@@ -1,0 +1,76 @@
+<header class="navbar">
+
+<div class="nav-container">
+
+<!-- LEFT LINKS -->
+<div class="nav-left">
+
+<a routerLink="/" routerLinkActive="active">
+Home
+</a>
+
+<a routerLink="/about">
+About
+</a>
+
+<a routerLink="/products">
+Product
+</a>
+
+</div>
+
+<!-- CENTER LOGO -->
+
+<div class="logo">
+B<span>LISS</span>
+</div>
+
+<!-- RIGHT LINKS -->
+
+<div class="nav-right">
+
+<a routerLink="/orders">
+Order Now
+</a>
+
+<a routerLink="/contact">
+Contact
+</a>
+
+<!-- LOGIN BUTTON -->
+
+<a *ngIf="!user" routerLink="/login">
+Log In
+</a>
+
+<!-- USER NAME -->
+
+<div class="user-box" *ngIf="user">
+
+<span class="username">
+👋 {{user.username}}
+</span>
+
+<button class="logout-btn" (click)="logout()">
+Logout
+</button>
+
+</div>
+
+<!-- CART -->
+
+<a routerLink="/cart" class="cart-icon">
+
+🛒
+
+<span class="cart-count">
+{{cartService.getCartCount()}}
+</span>
+
+</a>
+
+</div>
+
+</div>
+
+</header>

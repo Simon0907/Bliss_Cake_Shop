@@ -1,0 +1,36 @@
+/* You can add global styles to this file, and also import other style files */
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#f6f7fb;
+}
+
+.container{
+width:90%;
+margin:auto;
+}
+
+/* animation */
+
+.fade-in{
+animation:fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn{
+from{
+opacity:0;
+transform:translateY(20px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}

@@ -1,0 +1,56 @@
+<div class="admin-layout">
+
+<!-- SIDEBAR -->
+
+<div class="sidebar">
+
+<h2 class="logo">BLISS Admin</h2>
+
+<ul>
+
+<li>Dashboard</li>
+<li>Orders</li>
+<li>Customers</li>
+<li>Products</li>
+<li>Revenue</li>
+
+</ul>
+
+<button class="logout-btn" (click)="logout()">Logout</button>
+
+</div>
+
+
+<!-- MAIN CONTENT -->
+
+<div class="main">
+
+<h1>Dashboard</h1>
+
+<div class="stats">
+
+<div class="card">
+<h3>Total Orders</h3>
+<p>{{totalOrders}}</p>
+</div>
+
+<div class="card">
+<h3>Monthly Revenue</h3>
+<p>₹{{revenue}}</p>
+</div>
+
+<div class="card">
+<h3>Top Selling Product</h3>
+<p>{{topProduct}}</p>
+</div>
+
+<div class="card">
+<h3>Least Selling</h3>
+<p>{{leastProduct}}</p>
+</div>
+
+</div>
+
+</div>
+
+</div>

@@ -1,0 +1,140 @@
+.footer{
+
+background:#080004;
+padding:80px 20px;
+text-align:center;
+
+}
+
+.footer-container{
+
+max-width:1000px;
+margin:auto;
+
+}
+
+
+/* LOGO */
+
+.logo{
+
+font-size:50px;
+font-weight:700;
+margin-bottom:30px;
+color:#ff8fb1;
+
+}
+
+.logo .i{
+
+color:#66c3e0;
+
+}
+
+
+/* SOCIAL ICONS */
+
+.social-icons{
+
+margin-bottom:40px;
+
+}
+
+.social-icons a{
+
+display:inline-flex;
+align-items:center;
+justify-content:center;
+width:45px;
+height:45px;
+margin:0 10px;
+
+border:2px solid white;   /* white border */
+border-radius:50%;
+
+color:white;              /* icon color */
+
+font-size:18px;
+transition:0.3s;
+
+}
+
+.social-icons a:hover{
+
+background:white;
+color:#000; /* icon turns black on hover */
+
+}
+
+
+/* INFO */
+
+.footer-info{
+
+display:flex;
+justify-content:center;
+align-items:center;
+gap:40px;
+margin-bottom:40px;
+
+}
+
+.footer-info h3{
+
+font-size:22px;
+margin-bottom:10px;
+color: white;
+}
+
+.footer-info p{
+
+color:white;
+margin:5px 0;
+
+}
+
+
+/* DIVIDER */
+
+.divider{
+
+width:1px;
+height:70px;
+background:#ccc;
+
+}
+
+
+/* COPYRIGHT */
+
+.copyright{
+
+color:white;
+font-size:16px;
+
+}
+
+.copyright span{
+
+color:#ff8fb1;
+
+}
+
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+.footer-info{
+
+flex-direction:column;
+
+}
+
+.divider{
+
+display:none;
+
+}
+
+}

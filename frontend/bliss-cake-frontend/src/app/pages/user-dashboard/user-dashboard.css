@@ -1,0 +1,79 @@
+.dashboard-container{
+
+    min-height:100vh;
+    background:#ffe6ef;
+    padding:40px;
+}
+
+.welcome-card{
+
+    background:white;
+    padding:40px;
+    border-radius:20px;
+    text-align:center;
+    margin-bottom:40px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+}
+
+.welcome-card h1{
+
+    font-size:42px;
+    color:#ff4f9a;
+}
+
+.welcome-card p{
+
+    margin-top:10px;
+    color:gray;
+    font-size:18px;
+}
+
+.dashboard-grid{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.dashboard-card{
+
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.dashboard-card:hover{
+
+    transform:translateY(-5px);
+}
+
+.dashboard-card h2{
+
+    margin-bottom:15px;
+    color:#ff4f9a;
+}
+
+.dashboard-card p{
+
+    color:#666;
+    margin-bottom:25px;
+}
+
+.dashboard-card button{
+
+    background:#ff4f9a;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:30px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+.dashboard-card button:hover{
+
+    background:#ff2f86;
+}

@@ -1,0 +1,148 @@
+<div class="auth-wrapper">
+
+  <!-- BACKGROUND SHAPES -->
+  <div class="bg-shapes">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <div class="auth-container" [class.active]="isSignup">
+
+    <!-- ================= SIGNUP ================= -->
+
+    <div class="form signup">
+
+      <h2>Create Account</h2>
+
+      <!-- USERNAME -->
+      <div class="input-group">
+        <input
+          type="text"
+          [(ngModel)]="username"
+          name="username"
+          required
+        >
+        <label>User Name</label>
+      </div>
+
+      <!-- EMAIL -->
+      <div class="input-group">
+        <input
+          type="email"
+          [(ngModel)]="email"
+          name="signupEmail"
+          required
+        >
+        <label>Email</label>
+      </div>
+
+      <!-- PASSWORD -->
+      <div class="input-group">
+        <input
+          type="password"
+          [(ngModel)]="password"
+          name="signupPassword"
+          required
+        >
+        <label>Password</label>
+      </div>
+
+      <!-- SIGNUP BUTTON -->
+      <button
+        type="button"
+        class="primary-btn"
+        (click)="register()"
+      >
+        Sign Up
+      </button>
+
+      <!-- GOOGLE BUTTON -->
+      <button type="button" class="google-btn">
+
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/300/300221.png"
+          alt="google"
+        >
+
+        Sign up with Google
+
+      </button>
+
+      <!-- SWITCH -->
+      <p class="switch">
+        Already have an account?
+
+        <span (click)="toggle()">
+          Login
+        </span>
+      </p>
+
+    </div>
+
+    <!-- ================= LOGIN ================= -->
+
+    <div class="form login">
+
+      <h2>Welcome Back</h2>
+
+      <!-- EMAIL -->
+      <div class="input-group">
+        <input
+          type="email"
+          [(ngModel)]="email"
+          name="loginEmail"
+          required
+        >
+        <label>Email</label>
+      </div>
+
+      <!-- PASSWORD -->
+      <div class="input-group">
+        <input
+          type="password"
+          [(ngModel)]="password"
+          name="loginPassword"
+          required
+        >
+        <label>Password</label>
+      </div>
+
+      <!-- LOGIN BUTTON -->
+      <button
+        type="button"
+        class="primary-btn"
+        (click)="login()"
+      >
+        Login
+      </button>
+
+      <!-- GOOGLE BUTTON -->
+      <button type="button" class="google-btn">
+
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/300/300221.png"
+          alt="google"
+        >
+
+        Login with Google
+
+      </button>
+
+      <!-- SWITCH -->
+      <p class="switch">
+
+        Don't have an account?
+
+        <span (click)="toggle()">
+          Sign up
+        </span>
+
+      </p>
+
+    </div>
+
+  </div>
+
+</div>

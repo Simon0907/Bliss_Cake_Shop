@@ -1,0 +1,71 @@
+<div class="checkout-container">
+
+<h2 class="title">Checkout</h2>
+
+<div class="checkout-grid">
+
+<!-- CUSTOMER FORM -->
+
+<div class="checkout-form">
+
+<h3>Customer Details</h3>
+
+<form>
+
+<input type="text" placeholder="Full Name" required>
+
+<input type="text" placeholder="Phone Number" required>
+
+<textarea placeholder="Delivery Address" rows="4"></textarea>
+
+<select>
+<option>Payment Method</option>
+<option>Cash On Delivery</option>
+<option>UPI</option>
+<option>Card Payment</option>
+</select>
+
+</form>
+
+</div>
+
+
+<!-- ORDER SUMMARY -->
+
+<div class="order-summary">
+
+<h3>Order Summary</h3>
+
+<div class="order-item"
+*ngFor="let item of cartService.getItems()">
+
+<span>{{item.name}}</span>
+
+<span>
+₹{{item.price}} × {{item.quantity}}
+</span>
+
+</div>
+
+<div class="total">
+
+Total: ₹{{cartService.getTotalPrice()}}
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- PLACE ORDER BUTTON -->
+
+<div class="place-order">
+
+<button routerLink="/success">
+Place Order
+</button>
+
+</div>
+
+</div>

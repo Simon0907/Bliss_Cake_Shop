@@ -1,0 +1,113 @@
+<section class="product-header">
+
+<div class="overlay">
+<h1>Orders</h1>
+
+<div class="breadcrumb">
+Home <span>●</span> Orders
+</div>
+
+</div>
+
+</section>
+
+
+<!-- BROWNIES -->
+
+<section class="product-section">
+
+<h2 class="section-title">Brownies</h2>
+
+<div class="product-grid">
+
+<ng-container *ngFor="let p of products">
+
+<div class="product-card" *ngIf="p.category=='brownie'">
+
+<div class="price-tag">₹{{p.price}}</div>
+
+<div class="image-circle">
+<img [src]="p.img">
+</div>
+
+<h3>{{p.name}}</h3>
+
+<button class="order-btn" (click)="addToCart(p)">
+Order Now
+</button>
+
+</div>
+
+</ng-container>
+
+</div>
+
+</section>
+
+
+
+<!-- TRES LECHES -->
+
+<section class="product-section">
+
+<h2 class="section-title">Tres Leches</h2>
+
+<div class="product-grid">
+
+<ng-container *ngFor="let p of products">
+
+<div class="product-card" *ngIf="p.category=='tres'">
+
+<div class="price-tag">₹{{p.price}}</div>
+
+<div class="image-circle">
+<img [src]="p.img">
+</div>
+
+<h3>{{p.name}}</h3>
+
+<button class="order-btn" (click)="addToCart(p)">
+Order Now
+</button>
+
+</div>
+
+</ng-container>
+
+</div>
+
+</section>
+
+
+
+<!-- OUR SPECIAL -->
+
+<section class="product-section">
+
+<h2 class="section-title">Our Special</h2>
+
+<div class="product-grid">
+
+<ng-container *ngFor="let p of products">
+
+<div class="product-card" *ngIf="p.category=='special'">
+
+<div class="price-tag">₹{{p.price}}</div>
+
+<div class="image-circle">
+<img [src]="p.img">
+</div>
+
+<h3>{{p.name}}</h3>
+
+<button class="order-btn" (click)="addToCart(p)">
+Order Now
+</button>
+
+</div>
+
+</ng-container>
+
+</div>
+
+</section>

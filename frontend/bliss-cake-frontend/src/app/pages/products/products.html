@@ -1,0 +1,41 @@
+<section class="product-header">
+
+<div class="overlay">
+<h1>Product</h1>
+
+<div class="breadcrumb">
+Home <span>●</span> Product
+</div>
+
+</div>
+
+</section>
+
+
+<section class="product-section">
+
+<h2 class="title">
+Best Prices We Offer For <br>
+Ice Cream Lovers
+</h2>
+
+
+<div class="product-grid">
+
+
+<div class="product-card" *ngFor="let p of products">
+
+<div class="price-tag">₹{{p.price}}</div>
+
+<div class="image-circle">
+<img [src]="p.img" [alt]="p.name">
+</div>
+
+<h3>{{p.name}}</h3>
+
+</div>
+
+
+</div>
+
+</section>

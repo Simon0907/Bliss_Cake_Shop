@@ -1,0 +1,120 @@
+/* NAVBAR BACKGROUND */
+
+.navbar{
+background:linear-gradient(180deg,#f5a7c0 0%,#e8e8e8 100%);
+padding:15px 0;
+}
+
+
+/* NAV CONTAINER */
+
+.nav-container{
+max-width:1200px;
+margin:auto;
+background:white;
+border-radius:50px;
+padding:18px 40px;
+
+display:flex;
+align-items:center;
+justify-content:space-between;
+
+box-shadow:0 4px 15px rgba(0,0,0,0.08);
+}
+
+
+/* LEFT + RIGHT NAV LINKS */
+
+.nav-left,
+.nav-right{
+display:flex;
+align-items:center;
+gap:20px;
+}
+
+
+/* LOGO */
+
+.logo{
+font-size:42px;            /* enlarged logo */
+font-weight:800;
+letter-spacing:4px;
+font-family:'Poppins', sans-serif;
+display:flex;
+align-items:center;
+justify-content:center;
+}
+
+.logo span{
+background:linear-gradient(135deg,#f48fb1,#ec407a);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+.logo:hover{
+transform:scale(1.05);
+transition:0.3s;
+}
+
+/* NAV LINKS */
+
+.nav-left a,
+.nav-right a{
+text-decoration:none;
+color:#333;
+font-size:16px;
+font-weight:500;
+transition:0.3s;
+}
+
+.nav-left a:hover,
+.nav-right a:hover{
+color:#ec4899;
+}
+
+.active{
+color:#ec4899;
+}
+
+
+/* CART ICON */
+
+.cart-icon{
+position:relative;
+font-size:20px;
+text-decoration:none;
+color:#333;
+}
+
+.cart-count{
+position:absolute;
+top:-8px;
+right:-10px;
+background:#EA9AB2;
+color:white;
+font-size:12px;
+padding:3px 7px;
+border-radius:50%;
+font-weight:600;
+}
+
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+.nav-container{
+flex-direction:column;
+gap:15px;
+border-radius:30px;
+}
+
+.logo{
+font-size:36px;
+}
+
+.nav-left,
+.nav-right{
+gap:15px;
+}
+
+}

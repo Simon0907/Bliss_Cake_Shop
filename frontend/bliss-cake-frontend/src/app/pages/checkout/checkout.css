@@ -1,0 +1,112 @@
+.checkout-container{
+max-width:1200px;
+margin:auto;
+padding:60px 20px;
+font-family:'Poppins',sans-serif;
+}
+
+.title{
+text-align:center;
+font-size:36px;
+margin-bottom:50px;
+color:#2d3436;
+}
+
+.checkout-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+}
+
+/* FORM */
+
+.checkout-form{
+background:white;
+padding:35px;
+border-radius:12px;
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+}
+
+.checkout-form h3{
+margin-bottom:20px;
+}
+
+.checkout-form input,
+.checkout-form textarea,
+.checkout-form select{
+width:100%;
+padding:12px;
+margin-bottom:15px;
+border-radius:8px;
+border:1px solid #ddd;
+font-size:15px;
+}
+
+.checkout-form input:focus,
+.checkout-form textarea:focus,
+.checkout-form select:focus{
+outline:none;
+border-color:#EA9AB2;
+}
+
+/* ORDER SUMMARY */
+
+.order-summary{
+background:white;
+padding:35px;
+border-radius:12px;
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+}
+
+.order-summary h3{
+margin-bottom:20px;
+}
+
+.order-item{
+display:flex;
+justify-content:space-between;
+padding:10px 0;
+border-bottom:1px solid #eee;
+}
+
+.total{
+margin-top:20px;
+font-size:20px;
+font-weight:bold;
+text-align:right;
+color:#ec4899;
+}
+
+/* PLACE ORDER */
+
+.place-order{
+text-align:center;
+margin-top:40px;
+}
+
+.place-order button{
+padding:14px 40px;
+font-size:18px;
+background: linear-gradient(135deg, #ec4899, #db2777);
+border:none;
+border-radius:30px;
+color:white;
+cursor:pointer;
+transition:.3s;
+}
+
+.place-order button:hover{
+background: linear-gradient(135deg, #be185d, #831843);
+  transform: scale(1.05);
+  box-shadow: 0 8px 25px rgba(236, 72, 153, 0.4);
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+.checkout-grid{
+grid-template-columns:1fr;
+}
+
+}
